@@ -37,6 +37,7 @@ typedef struct	s_lstag
 	struct s_lstag	*next;		/*!< Pointeur sur le maillon suivant */
 }				t_lstag;
 
+void			ft_lstagadd(t_lstag **alst, t_lstag *new);
 t_lstag			*ft_lstagnew(void const *content, size_t content_size);
 
 /*void			ft_lstiter_if(t_list *lst, void (*f)(void*), int (t)(void*));
