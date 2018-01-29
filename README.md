@@ -19,6 +19,10 @@ La documentation est générée grâce à [Doxygen][]. Le _Makefile_ utilise l'a
 
 ## Fonctions
 
+### - Gestion de liste
+
+- `ft_lstagnew` : Création d'un maillon : allocation de la taille nécessaire et initialisation des chmaps.
+
 ### - Gestion de mémoire
 
 - `ft_memrealloc` : Réallocation d'une zone de mémoire. Copie de l'ancienne dans la nouvelle.

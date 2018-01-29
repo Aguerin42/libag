@@ -7,8 +7,38 @@
 # define LIBAG_H
 
 # include "libft.h"
+#include <stdlib.h>
+#include <string.h>
+
+/*
+**	memory
+*/
 
 void			*ft_memrealloc(void *old, size_t oldsize, size_t newsize);
+
+/*
+**	list
+*/
+
+/**
+** \brief	Structure pour les listes
+**
+** \param	content			- Variable pour le stockage d'une valeur
+** \param	content_size	- Taille de la variable
+** \param	prev			- Pointeur sur le maillon précédent
+** \param	next			- Pointeur sur le maillon suivant
+*/
+
+typedef struct	s_lstag
+{
+	void			*content;	/*!< Variable pour le stockage d'une variable */
+	size_t			content_size;	/*!< Taille de la variable */
+	struct s_lstag	*prev;		/*!< Pointeur sur le maillon précédent */
+	struct s_lstag	*next;		/*!< Pointeur sur le maillon suivant */
+}				t_lstag;
+
+t_lstag			*ft_lstagnew(void const *content, size_t content_size);
+
 /*void			ft_lstiter_if(t_list *lst, void (*f)(void*), int (t)(void*));
 t_list			*ft_lstfind(t_list *lst, int f(void*));
 t_list			*ft_lstfind_prev(t_list *lst, int f(void*));
