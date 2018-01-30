@@ -13,7 +13,7 @@ INC = $(addprefix includes/, $(INC_FILE))
 
 # Sources
 SRC_FILE = #fichiers
-SRC_LST = ft_lstagadd.c ft_lstagdelone.c ft_lstagnew.c
+SRC_LST = ft_lstagadd.c ft_lstagdel.c ft_lstagdelone.c ft_lstagnew.c
 SRC_MEM = ft_memrealloc.c
 SRC = $(addprefix src/, $(SRC_FILE))\
 	  $(addprefix src/list/, $(SRC_LST))\
