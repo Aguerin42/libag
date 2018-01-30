@@ -2,6 +2,8 @@
 **	\file	ft_memrealloc.c
 **	\author	Alexis Guérin
 **	\date	12 décembre 2018
+**
+**	\brief	Changement d'une taille d'allocation
 */
 
 #include "libag.h"

@@ -2,6 +2,8 @@
 **	\file	ft_lstagnew.c
 **	\author	Alexis Guérin
 **	\date	29 janvier 2018
+**
+**	\brief	Création d'un maillon
 */
 
 #include "libag.h"

@@ -2,6 +2,8 @@
 **	\file	ft_lstagdelone.c
 **	\author	Alexis Guérin
 **	\date	29 janvier 2018
+**
+**	\brief	Suppression d'un maillon
 */
 
 #include "libag.h"

@@ -2,6 +2,8 @@
 **	\file	ft_lstagadd.c
 **	\author	Alexis Guérin
 **	\date	29 janvier 2018
+**
+**	\brief	Insertion d'un maillon
 */
 
 #include "libag.h"

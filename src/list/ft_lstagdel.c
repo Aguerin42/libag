@@ -2,12 +2,14 @@
 **	\file	ft_lstagdel.c
 **	\author	Alexis Guérin
 **	\date	30 janvier 2019
+**
+**	\brief	Suppression d'une liste
 */
 
 #include "libag.h"
 
 /**
-**	\brief	Suppression de liste
+**	\brief	Suppression d'une liste
 **
 **	La fonction supprime la liste `alst` et libère la mémoire en faisant appel à
 **	la fonction `del` sur chaque maillon.
