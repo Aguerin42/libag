@@ -27,6 +27,7 @@ La documentation est générée grâce à [Doxygen][]. Le _Makefile_ utilise l'a
 - `ft_lstagdel` : Suppression de toute une liste
 - `ft_lstagiter` : Application d'une fonction sur les maillons
 - `ft_lstagcountelem` : Dénombrement du nombre de maillon
+- `ft_lstagtail` : Renvoie la queue de liste
 
 ### - Gestion de mémoire
 
