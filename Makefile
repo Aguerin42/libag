@@ -15,9 +15,11 @@ INC = $(addprefix includes/, $(INC_FILE))
 SRC_FILE = #fichiers
 SRC_LST = ft_lstagadd.c ft_lstagcountelem.c ft_lstagdel.c ft_lstagdelone.c ft_lstagiter.c ft_lstagnew.c ft_lstagtail.c
 SRC_MEM = ft_memrealloc.c
+SRC_PRT = ft_putxchar.c
 SRC = $(addprefix src/, $(SRC_FILE))\
 	  $(addprefix src/list/, $(SRC_LST))\
 	  $(addprefix src/memory/, $(SRC_MEM))\
+	  $(addprefix src/print/, $(SRC_PRT))\
 
 # Objets
 OBJ = $(SRC:.c=.o)
