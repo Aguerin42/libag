@@ -41,6 +41,7 @@ void			ft_lstagadd(t_lstag **alst, t_lstag *new);
 t_lstag			*ft_lstagnew(void const *content, size_t content_size);
 void			ft_lstagdelone(t_lstag **alst, void (*del)(void *, size_t));
 void			ft_lstagdel(t_lstag **alst, void (*del)(void *, size_t));
+int				ft_lstagcountelem(t_lstag *list);
 
 /*void			ft_lstiter_if(t_list *lst, void (*f)(void*), int (t)(void*));
 t_list			*ft_lstfind(t_list *lst, int f(void*));
