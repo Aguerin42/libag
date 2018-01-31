@@ -19,9 +19,12 @@ La documentation est générée grâce à [Doxygen][]. Le _Makefile_ utilise l'a
 
 ## Fonctions
 
+### - Affichage
+- `ft_putxchar` : Affichage d'un caractère _x_ fois
+
 ### - Gestion de liste
 
-- `ft_lstagnew` : Création d'un maillon : allocation de la taille nécessaire et initialisation des chmaps.
+- `ft_lstagnew` : Création d'un maillon : allocation de la taille nécessaire et initialisation des champs
 - `ft_lstagadd` : Ajout d'un maillon en tête de liste
 - `ft_lstagdelone` : Suppression d'un maillon
 - `ft_lstagdel` : Suppression de toute une liste
