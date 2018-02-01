@@ -11,8 +11,8 @@
 **
 **	ft_lstagiter() applique la fonction `f` sur chaque maillon de la list `lst`.
 **
-**	\param	lst		- list
-**	\param	elem	- fonction à appliquer
+**	\param	lst	- list
+**	\param	f	- fonction à appliquer
 */
 
 void	ft_lstagiter(t_lstag *lst, void (*f)(t_lstag *elem))
