@@ -26,6 +26,7 @@ La documentation est générée grâce à [Doxygen][]. Le _Makefile_ utilise l'a
 
 - `ft_lstagnew` : Création d'un maillon : allocation de la taille nécessaire et initialisation des champs
 - `ft_lstagadd` : Ajout d'un maillon en tête de liste
+- `ft_lstagaddtail` : Ajout d'un maillon en queue de liste
 - `ft_lstagdelone` : Suppression d'un maillon
 - `ft_lstagdel` : Suppression de toute une liste
 - `ft_lstagiter` : Application d'une fonction sur les maillons

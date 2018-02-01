@@ -39,6 +39,7 @@ typedef struct	s_lstag
 }				t_lstag;
 
 void			ft_lstagadd(t_lstag **alst, t_lstag *new);
+void			ft_lstagaddtail(t_lstag **alst, t_lstag *new);
 t_lstag			*ft_lstagnew(void const *content, size_t content_size);
 void			ft_lstagdelone(t_lstag **alst, void (*del)(void *, size_t));
 void			ft_lstagdel(t_lstag **alst, void (*del)(void *, size_t));
