@@ -31,6 +31,7 @@ La documentation est générée grâce à [Doxygen][]. Le _Makefile_ utilise l'a
 - `ft_lstagiter` : Application d'une fonction sur les maillons
 - `ft_lstagcountelem` : Dénombrement du nombre de maillon
 - `ft_lstagtail` : Renvoie la queue de liste
+- `ft_lstagmapif` : Création d'une liste à partir d'une sélection de maillon
 
 ### - Gestion de mémoire
 

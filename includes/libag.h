@@ -45,6 +45,8 @@ void			ft_lstagdel(t_lstag **alst, void (*del)(void *, size_t));
 int				ft_lstagcountelem(t_lstag *list);
 void			ft_lstagiter(t_lstag *lst, void (*f)(t_lstag *elem));
 t_lstag			*ft_lstagtail(t_lstag *list);
+t_lstag			*ft_lstagmapif(t_lstag *lst, int (*f)(t_lstag*),
+											void (add)(t_lstag**, t_lstag*));
 
 /*
 **	print

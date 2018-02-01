@@ -1,0 +1,38 @@
+/**
+**	\brief	ft_lstagmapif.c
+**	\author	Alexis Guérin
+**	\date	1 février 2018
+*/
+
+#include "libag.h"
+
+/**
+**	\brief	Création d'une liste à partir d'une sélection
+**
+**	La fonction applique `f` sur chaque maillon de la list `lst`. Une nouvelle
+**	liste est créée à partir des maillons qui, envoyé à `f`, renvoyaient _vrai_.
+**	La fonction `add` est utilisée pour l'insertion de chaque maillon dans la
+**	nouvelle liste.
+*/
+
+t_lstag		*ft_lstagmapif(t_lstag *lst, int (*f)(t_lstag*),
+											void (add)(t_lstag**, t_lstag*))
+{
+	t_lstag	*new_list;
+	t_lstag	*new_elem;
+
+	new_list = NULL;
+	while (lst)
+	{
+		if (f(lst))
+		{
+			new_elem = ft_lstagnew(lst->content, sizeof(lst->content));
+			if (!new_list)
+				new_list = new_elem;
+			else
+				add(&new_list, new_elem);
+		}
+		lst = lst->next;
+	}
+	return (new_list);
+}
