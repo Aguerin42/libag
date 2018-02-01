@@ -28,7 +28,7 @@ t_lstag	*ft_lstagnew(void const *content, size_t content_size)
 {
 	t_lstag	*list;
 
-	if ((list = (t_lstag*)malloc(sizeof(t_lstag))))
+	if ((list = (t_lstag*)ft_memalloc(sizeof(t_lstag))))
 	{
 		if (!content)
 		{
@@ -37,7 +37,7 @@ t_lstag	*ft_lstagnew(void const *content, size_t content_size)
 		}
 		else
 		{
-			if (!(list->content = malloc(sizeof(content) * content_size)))
+			if (!(list->content = ft_memalloc(sizeof(content) * content_size)))
 			{
 				free(list);
 				return (NULL);
