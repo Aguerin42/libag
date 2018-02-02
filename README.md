@@ -20,7 +20,15 @@ La documentation est générée grâce à [Doxygen][]. Le _Makefile_ utilise l'a
 ## Fonctions
 
 ### - Affichage
-- `ft_putxchar` : Affichage d'un caractère _x_ fois
+- `ag_putcharl` : Affichage d'un caractère suivi d'un retour à la ligne
+- `ag_putchars` : Affichage d'un caractère suivi d'un espace
+- `ag_putxchar` : Affichage d'un caractère _x_ fois
+- `ag_putcharl_fd` : Écriture d'un caractère suivi d'un retour à la ligne sur un `fd`
+- `ag_putchars_fd` : Écriture d'un caractère suivi d'un espace sur un `fd`
+- `ag_putnbrl` : Affichage d'un nombre suivi d'un retour à la ligne
+- `ag_putnbrs` : Affichage d'un nombre suivi d'un espace
+- `ag_putnbrl_fd` : Écriture d'un nombre suivi d'un retour à la ligne sur un `fd`
+- `ag_putnbrs_fd` : Écriture d'un nombre suivi d'un espace sur un `fd`
 
 ### - Gestion de liste
 
