@@ -20,6 +20,7 @@ La documentation est générée grâce à [Doxygen][]. Le _Makefile_ utilise l'a
 ## Fonctions
 
 ### - Affichage
+
 - `ag_putcharl` : Affichage d'un caractère suivi d'un retour à la ligne
 - `ag_putchars` : Affichage d'un caractère suivi d'un espace
 - `ag_putxchar` : Affichage d'un caractère _x_ fois
@@ -44,8 +45,11 @@ La documentation est générée grâce à [Doxygen][]. Le _Makefile_ utilise l'a
 
 ### - Gestion de mémoire
 
-- `ft_memrealloc` : Réallocation d'une zone de mémoire. Copie de l'ancienne dans la nouvelle.
+- `ft_memrealloc` : Réallocation d'une zone de mémoire. Copie de l'ancienne dans la nouvelle
 
+### - Autres
 
-[Libft]: https://github.com/aguerin42/libft.git
+- `get_next_line` : Lit une ligne sur un `fd` et la retourne
+
+[libft]: https://github.com/aguerin42/libft.git
 [Doxygen]: https://github.com/doxygen/doxygen

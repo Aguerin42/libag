@@ -8,15 +8,15 @@ CFLAGS = -Wall -Werror -Wextra
 CPPFLAGS = -I includes/ -I $(LIBFT_INC)
 
 # Headers
-INC_FILE = libag.h
+INC_FILE = libag.h get_next_line.h
 INC = $(addprefix includes/, $(INC_FILE))
 
 # Sources
-SRC_FILE = #fichiers
+SRC_OTH = get_next_line.c
 SRC_LST = ft_lstagadd.c ft_lstagcountelem.c ft_lstagdel.c ft_lstagdelone.c ft_lstagiter.c ft_lstagmapif.c ft_lstagnew.c ft_lstagtail.c
 SRC_MEM = ft_memrealloc.c
 SRC_PRT = ag_putchar.c ag_putchar_fd.c ag_putnbr.c ag_putnbr_fd.c
-SRC = $(addprefix src/, $(SRC_FILE))\
+SRC = $(addprefix src/, $(SRC_OTH))\
 	  $(addprefix src/list/, $(SRC_LST))\
 	  $(addprefix src/memory/, $(SRC_MEM))\
 	  $(addprefix src/print/, $(SRC_PRT))\
