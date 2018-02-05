@@ -12,6 +12,21 @@
 # include <string.h>
 
 /*
+**	conversions
+*/
+
+int				ag_atoi_base(const char *str, int base);
+char			*ag_itoa_base(unsigned long nb, int base);
+
+/*
+**	is
+*/
+
+int				ag_isspace(int c);
+int				ag_islowercase(char c);
+int				ag_isuppercase(char c);
+
+/*
 **	list
 */
 
@@ -32,25 +47,46 @@ typedef struct	s_lstag
 	struct s_lstag	*next;		/*!< Pointeur sur le maillon suivant */
 }				t_lstag;
 
-void			ft_lstagadd(t_lstag **alst, t_lstag *new);
-void			ft_lstagaddtail(t_lstag **alst, t_lstag *new);
-t_lstag			*ft_lstagnew(void const *content, size_t content_size);
-void			ft_lstagdelone(t_lstag **alst, void (*del)(void *, size_t));
-void			ft_lstagdel(t_lstag **alst, void (*del)(void *, size_t));
-int				ft_lstagcountelem(t_lstag *list);
-void			ft_lstagiter(t_lstag *lst, void (*f)(t_lstag *elem));
-t_lstag			*ft_lstagtail(t_lstag *list);
-t_lstag			*ft_lstagmapif(t_lstag *lst, int (*f)(t_lstag*),
+void			ag_lstadd(t_lstag **alst, t_lstag *new);
+void			ag_lstaddtail(t_lstag **alst, t_lstag *new);
+t_lstag			*ag_lstnew(void const *content, size_t content_size);
+void			ag_lstdelone(t_lstag **alst, void (*del)(void *, size_t));
+void			ag_lstdel(t_lstag **alst, void (*del)(void *, size_t));
+int				ag_lstcountelem(t_lstag *list);
+void			ag_lstiter(t_lstag *lst, void (*f)(t_lstag *elem));
+t_lstag			*ag_lsttail(t_lstag *list);
+t_lstag			*ag_lstmapif(t_lstag *lst, int (*f)(t_lstag*),
 											void (add)(t_lstag**, t_lstag*));
+
+int				ft_lstany(t_list *list, int f(void *));
+int				ft_lstcount_all(t_list *lst, int f(void*));
+int				ft_lstcount_if(t_list *list, int f(void*));
+
+/*
+**	math
+*/
+
+int				ag_factorial(int nb);
+long long int	ag_pow(int nb, unsigned int pow);
+int				ag_sqrt(int nb);
 
 /*
 **	memory
 */
 
-void			*ft_memrealloc(void *old, size_t oldsize, size_t newsize);
+void			ag_strdeldouble(char ***str);
+void			*ag_memrealloc(void *old, size_t oldsize, size_t newsize);
 
 /*
-**	print
+**	others
+*/
+
+void			ag_swap(int *a, int *b);
+void			fill_tab(int tab[], unsigned int size, int value);
+int				ag_nbrlen(long nb);
+
+/*
+**	put
 */
 
 int				ag_putcharl(char c);
@@ -62,5 +98,23 @@ int				ag_putnbrl(int n);
 int				ag_putnbrs(int n);
 int				ag_putnbrl_fd(int n, int fd);
 int				ag_putnbrs_fd(int n, int fd);
+int				ag_putstrs(char const *str);
+int				ag_putstrs_fd(char const *str, int fd);
+int				ag_putstrlower(const char *str);
+int				ag_putstrupper(const char *str);
+
+int				ag_putnstr(const char *str, unsigned int n);
+int				ag_putnstrl(const char *str, unsigned int n);
+int				ag_putnstrs(const char *str, unsigned int n);
+
+/*
+**	string
+*/
+
+int				ag_strlendouble(char **str);
+char			*ag_strtolower(char *str);
+char			*ag_strtoupper(char *str);
+unsigned int	count_word(char *s, char c);
+char			*ag_strfreejoin(char *s1, char *s2);
 
 #endif

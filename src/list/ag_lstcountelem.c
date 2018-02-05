@@ -1,5 +1,5 @@
 /**
-**	\file	ft_lstagcountelem.c
+**	\file	ag_lstcountelem.c
 **	\author	Alexis Guérin
 **	\date	31 janvier 2018
 */
@@ -16,7 +16,7 @@
 **	\return	**nombre de maillon**
 */
 
-int	ft_lstagcountelem(t_lstag *list)
+int	ag_lstcountelem(t_lstag *list)
 {
 	int	nb;
 

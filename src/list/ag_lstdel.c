@@ -1,5 +1,5 @@
 /**
-**	\file	ft_lstagdel.c
+**	\file	ag_lstdel.c
 **	\author	Alexis Guérin
 **	\date	30 janvier 2019
 **
@@ -14,17 +14,17 @@
 **	La fonction supprime la liste `alst` et libère la mémoire en faisant appel à
 **	la fonction `del` sur chaque maillon.
 **
-**	ft_lstagdelone() est appelé sur chaque maillon de la liste.
+**	ag_lstdelone() est appelé sur chaque maillon de la liste.
 **
 **	\param	alst	- pointeur sur la tête de liste à supprimer
 **	\param	del		- fonction de suppression du champ `content`
 */
 
-void	ft_lstagdel(t_lstag **alst, void (*del)(void *, size_t))
+void	ag_lstdel(t_lstag **alst, void (*del)(void *, size_t))
 {
 	if (*alst)
 	{
-		ft_lstagdel(&((*alst)->next), del);
-		ft_lstagdelone(&(*alst), del);
+		ag_lstdel(&((*alst)->next), del);
+		ag_lstdelone(&(*alst), del);
 	}
 }

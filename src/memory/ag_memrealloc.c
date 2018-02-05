@@ -1,5 +1,5 @@
 /**
-**	\file	ft_memrealloc.c
+**	\file	ag_memrealloc.c
 **	\author	Alexis Guérin
 **	\date	12 décembre 2018
 **
@@ -28,7 +28,7 @@
 **			où l'ancienne a été copiée, ou **NULL** en cas d'erreur
 **/
 
-void	*ft_memrealloc(void *old, size_t oldsize, size_t newsize)
+void	*ag_memrealloc(void *old, size_t oldsize, size_t newsize)
 {
 	void	*new;
 

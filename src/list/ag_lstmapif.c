@@ -1,5 +1,5 @@
 /**
-**	\brief	ft_lstagmapif.c
+**	\brief	ag_lstmapif.c
 **	\author	Alexis Guérin
 **	\date	1 février 2018
 */
@@ -15,7 +15,7 @@
 **	nouvelle liste.
 */
 
-t_lstag		*ft_lstagmapif(t_lstag *lst, int (*f)(t_lstag*),
+t_lstag		*ag_lstmapif(t_lstag *lst, int (*f)(t_lstag*),
 											void (add)(t_lstag**, t_lstag*))
 {
 	t_lstag	*new_list;
@@ -26,7 +26,7 @@ t_lstag		*ft_lstagmapif(t_lstag *lst, int (*f)(t_lstag*),
 	{
 		if (f(lst))
 		{
-			new_elem = ft_lstagnew(lst->content, sizeof(lst->content));
+			new_elem = ag_lstnew(lst->content, sizeof(lst->content));
 			if (!new_list)
 				new_list = new_elem;
 			else

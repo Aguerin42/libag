@@ -1,5 +1,5 @@
 /**
-**	\file	ft_lstagnew.c
+**	\file	ag_lstnew.c
 **	\author	Alexis Guérin
 **	\date	29 janvier 2018
 **
@@ -24,7 +24,7 @@
 **	\return	**maillon alloué** ou **NULL** en cas d'erreur
 */
 
-t_lstag	*ft_lstagnew(void const *content, size_t content_size)
+t_lstag	*ag_lstnew(void const *content, size_t content_size)
 {
 	t_lstag	*list;
 

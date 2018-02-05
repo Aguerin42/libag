@@ -25,7 +25,6 @@ int	ag_putcharl_fd(char c, int fd)
 	return (ft_putchar_fd(c, fd) + ft_putchar_fd('\n', fd));
 }
 
-
 /**
 **	\brief	Écriture d'un caractère sur un `fd` suivi d'un espace
 **

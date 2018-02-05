@@ -12,14 +12,22 @@ INC_FILE = libag.h get_next_line.h
 INC = $(addprefix includes/, $(INC_FILE))
 
 # Sources
-SRC_OTH = get_next_line.c
-SRC_LST = ft_lstagadd.c ft_lstagcountelem.c ft_lstagdel.c ft_lstagdelone.c ft_lstagiter.c ft_lstagmapif.c ft_lstagnew.c ft_lstagtail.c
-SRC_MEM = ft_memrealloc.c
-SRC_PRT = ag_putchar.c ag_putchar_fd.c ag_putnbr.c ag_putnbr_fd.c
-SRC = $(addprefix src/, $(SRC_OTH))\
-	  $(addprefix src/list/, $(SRC_LST))\
-	  $(addprefix src/memory/, $(SRC_MEM))\
-	  $(addprefix src/print/, $(SRC_PRT))\
+SRC_CNV = ag_atoi_base.c ag_itoa_base.c
+SRC_IS	= ag_isspace.c ag_iscase.c
+SRC_LST = ag_lstadd.c ag_lstcountelem.c ag_lstdel.c ag_lstdelone.c ag_lstiter.c ag_lstmapif.c ag_lstnew.c ag_lsttail.c ft_lstcount.c
+SRC_MTH = ag_factorial.c ag_sqrt.c ag_pow.c
+SRC_MEM = ag_memrealloc.c ag_strdeldouble.c
+SRC_OTH = get_next_line.c ag_swap.c fill_tab.c ag_nbrlen.c
+SRC_PUT = ag_putchar.c ag_putchar_fd.c ag_putnbr.c ag_putnbr_fd.c ag_putnstr.c ag_putstrcase.c ag_putstrs.c ag_putstrs_fd.c
+SRC_STR = count_word.c ag_strfreejoin.c ag_strlendouble.c ag_strtocase.c
+SRC = $(addprefix src/conversion/, $(SRC_CNV))\
+	$(addprefix src/is/, $(SRC_IS))\
+	$(addprefix src/list/, $(SRC_LST))\
+	$(addprefix src/math/, $(SRC_MTH))\
+	$(addprefix src/memory/, $(SRC_MEM))\
+	$(addprefix src/others/, $(SRC_OTH))\
+	$(addprefix src/put/, $(SRC_PUT))\
+	$(addprefix src/string/, $(SRC_STR))
 
 # Objets
 OBJ = $(SRC:.c=.o)

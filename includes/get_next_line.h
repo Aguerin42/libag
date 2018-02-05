@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/06 16:06:08 by aguerin           #+#    #+#             */
-/*   Updated: 2018/02/02 14:30:46 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/02/05 12:03:34 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # include "libft.h"
+# include "libag.h"
 # include <stdlib.h>
 # include <sys/types.h>
 # include <sys/uio.h>

@@ -1,5 +1,5 @@
 /**
-**	\file	ft_lstagadd.c
+**	\file	ag_lstadd.c
 **	\author	Alexis Guérin
 **	\date	29 janvier 2018
 **
@@ -17,7 +17,7 @@
 **	\param	new		- nouveau maillon à insérer
 */
 
-void	ft_lstagadd(t_lstag **alst, t_lstag *new)
+void	ag_lstadd(t_lstag **alst, t_lstag *new)
 {
 	t_lstag *lst;
 
@@ -39,13 +39,13 @@ void	ft_lstagadd(t_lstag **alst, t_lstag *new)
 **	\param	new		- nouveau maillon à insérer
 */
 
-void	ft_lstagaddtail(t_lstag **alst, t_lstag *new)
+void	ag_lstaddtail(t_lstag **alst, t_lstag *new)
 {
 	t_lstag	*tail;
 
 	if (alst)
 	{
-		tail = ft_lstagtail(*alst);
-		ft_lstagadd(&new, tail);
+		tail = ag_lsttail(*alst);
+		ag_lstadd(&new, tail);
 	}
 }

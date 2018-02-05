@@ -1,5 +1,5 @@
 /**
-**	\file	ft_lstagtail.c
+**	\file	ag_lsttail.c
 **	\author	Alexis Guérin
 **	\date	31 janvier 2018
 */
@@ -16,7 +16,7 @@
 **	\return	pointeur sur la **queue de la liste** ou **NULL** en cas d'erreur
 */
 
-t_lstag	*ft_lstagtail(t_lstag *list)
+t_lstag	*ag_lsttail(t_lstag *list)
 {
 	while (list && list->next)
 		list = list->next;

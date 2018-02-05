@@ -33,7 +33,7 @@ int	ag_putnbrl(int n)
 **	\return	**nombre de caractères affichés**
 */
 
-int	ft_putnbrs(int n)
+int	ag_putnbrs(int n)
 {
 	return (ft_putnbr(n) + ft_putchar(' '));
 }
