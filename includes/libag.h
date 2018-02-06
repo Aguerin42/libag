@@ -111,6 +111,8 @@ int				ag_putnstrs(const char *str, unsigned int n);
 **	string
 */
 
+int				ag_strequ(char const *s1, char const *s2);
+int				ag_strnequ(char const *s1, char const *s2, size_t n);
 int				ag_strlendouble(char **str);
 char			*ag_strtolower(char *str);
 char			*ag_strtoupper(char *str);
