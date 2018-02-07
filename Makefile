@@ -18,6 +18,7 @@ SRC_LST = ag_lstadd.c ag_lstcountelem.c ag_lstdel.c ag_lstdelone.c ag_lstiter.c 
 SRC_MTH = ag_factorial.c ag_sqrt.c ag_pow.c
 SRC_MEM = ag_memrealloc.c ag_strdeldouble.c
 SRC_OTH = get_next_line.c ag_swap.c fill_tab.c ag_nbrlen.c
+SRC_PAT = isdir.c
 SRC_PUT = ag_putchar.c ag_putchar_fd.c ag_putnbr.c ag_putnbr_fd.c ag_putnstr.c ag_putstrcase.c ag_putstrs.c ag_putstrs_fd.c
 SRC_STR = ag_strequ.c ag_strfreejoin.c ag_strlendouble.c ag_strtocase.c count_word.c 
 SRC = $(addprefix src/conversion/, $(SRC_CNV))\
@@ -26,6 +27,7 @@ SRC = $(addprefix src/conversion/, $(SRC_CNV))\
 	$(addprefix src/math/, $(SRC_MTH))\
 	$(addprefix src/memory/, $(SRC_MEM))\
 	$(addprefix src/others/, $(SRC_OTH))\
+	$(addprefix src/path/, $(SRC_PAT))\
 	$(addprefix src/put/, $(SRC_PUT))\
 	$(addprefix src/string/, $(SRC_STR))
 

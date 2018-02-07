@@ -47,6 +47,10 @@ La documentation est générée grâce à [Doxygen][]. Le _Makefile_ utilise l'a
 
 - `ft_memrealloc` : Réallocation d'une zone de mémoire. Copie de l'ancienne dans la nouvelle
 
+### - Gestion de fichiers
+
+- `is_dir` : Teste si l'élément pointé est un dossier
+
 ### - Autres
 
 - `get_next_line` : Lit une ligne sur un `fd` et la retourne

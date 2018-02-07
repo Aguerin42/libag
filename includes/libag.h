@@ -7,6 +7,7 @@
 # define LIBAG_H
 
 # include "libft.h"
+# include <sys/stat.h>
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
@@ -84,6 +85,12 @@ void			*ag_memrealloc(void *old, size_t oldsize, size_t newsize);
 void			ag_swap(int *a, int *b);
 void			fill_tab(int tab[], unsigned int size, int value);
 int				ag_nbrlen(long nb);
+
+/*
+**	path
+*/
+
+int				isdir(const char *path);
 
 /*
 **	put
