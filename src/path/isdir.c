@@ -17,8 +17,7 @@
 **
 **	\param	path	- chemin d'accès vers l'élément
 **
-**	\return	**1** si l'élément est un dossier ou **0** sinon,
-**			ou **-1** en cas d'erreur
+**	\return	**1** si l'élément est un dossier ou **0** sinon
 */
 
 int	isdir(const char *path)
@@ -27,6 +26,6 @@ int	isdir(const char *path)
 
 	s.st_mode = 0;
 	if (stat(path, &s))
-		return (-1);
+		return (0);
 	return (S_ISDIR(s.st_mode));
 }
