@@ -34,6 +34,29 @@ int	ft_lstany(t_list *list, int f(void *))
 }
 
 /**
+**	\brief	Compte le nombre de maillon
+**
+**	La fonction renvoie le nombre de maillon présent dans la liste.
+**
+**	\param	list	- tête de liste
+**
+**	\return	**nombre de maillon** dans la liste
+*/
+
+int	ft_lstcount(t_list *list)
+{
+	int	i;
+
+	i = 0;
+	while (list)
+	{
+		i++;
+		list = list->next;
+	}
+	return (i);
+}
+
+/**
 **	\brief	Renvoie le total des retours de la fonction _f_
 **
 **	La fonction appelle la fonction _f_ (en lui donnant en paramètre le champ

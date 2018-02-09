@@ -65,6 +65,7 @@ t_lstag			*ag_lstmapif(t_lstag *lst, int (*f)(t_lstag*),
 
 t_list			*ft_lstaddalpha(t_list **alst, t_list *new);
 int				ft_lstany(t_list *list, int f(void *));
+int				ft_lstcount(t_list *list);
 int				ft_lstcount_all(t_list *lst, int f(void*));
 int				ft_lstcount_if(t_list *list, int f(void*));
 
