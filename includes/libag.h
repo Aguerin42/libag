@@ -59,6 +59,11 @@ t_lstag			*ag_lsttail(t_lstag *list);
 t_lstag			*ag_lstmapif(t_lstag *lst, int (*f)(t_lstag*),
 											void (add)(t_lstag**, t_lstag*));
 
+/*
+**	fonctions pour la liste de la libft
+*/
+
+t_list			*ft_lstaddalpha(t_list **alst, t_list *new);
 int				ft_lstany(t_list *list, int f(void *));
 int				ft_lstcount_all(t_list *lst, int f(void*));
 int				ft_lstcount_if(t_list *list, int f(void*));
