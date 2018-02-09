@@ -22,7 +22,7 @@
 
 int	ag_putnbrl_fd(int n, int fd)
 {
-	return (ft_putnbr_fd(n, fd) + ft_putchar_fd('\n', n));
+	return (ft_putnbr_fd(n, fd) + ft_putchar_fd('\n', fd));
 }
 
 /**
