@@ -70,7 +70,6 @@ int			ag_putchoice(const char **dstr)
 		if (ioctl(0, TIOCGWINSZ, &window) != -1)
 		{
 			bigger = big(dstr);
-			ag_putnbrl(bigger);
 			if (bigger + 1 >= window.ws_col)
 				print_simple(dstr);
 			else
