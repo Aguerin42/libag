@@ -11,6 +11,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# include <sys/ioctl.h>
 
 /*
 **	conversions
@@ -119,6 +120,8 @@ int				ag_putstrupper(const char *str);
 int				ag_putnstr(const char *str, unsigned int n);
 int				ag_putnstrl(const char *str, unsigned int n);
 int				ag_putnstrs(const char *str, unsigned int n);
+
+int				ag_putchoice(const char **dstr);
 
 /*
 **	string
