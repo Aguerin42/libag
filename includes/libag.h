@@ -127,6 +127,7 @@ int				ag_putnstrs(const char *str, unsigned int n);
 int				ag_strequ(char const *s1, char const *s2);
 int				ag_strnequ(char const *s1, char const *s2, size_t n);
 int				ag_strlendouble(char **str);
+char			*ag_strnrchr(const char *s, int c, int n);
 char			*ag_strtolower(char *str);
 char			*ag_strtoupper(char *str);
 unsigned int	count_word(char *s, char c);
