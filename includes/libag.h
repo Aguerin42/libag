@@ -56,6 +56,7 @@ void			ag_lstdelone(t_lstag **alst, void (*del)(void *, size_t));
 void			ag_lstdel(t_lstag **alst, void (*del)(void *, size_t));
 int				ag_lstcountelem(t_lstag *list);
 void			ag_lstiter(t_lstag *lst, void (*f)(t_lstag *elem));
+t_lstag			*ag_lsthead(t_lstag *list);
 t_lstag			*ag_lsttail(t_lstag *list);
 t_lstag			*ag_lstmapif(t_lstag *lst, int (*f)(t_lstag*),
 											void (add)(t_lstag**, t_lstag*));
