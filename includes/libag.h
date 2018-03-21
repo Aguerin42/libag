@@ -121,6 +121,9 @@ int				ag_putstrupper(const char *str);
 int				ag_putnstr(const char *str, unsigned int n);
 int				ag_putnstrl(const char *str, unsigned int n);
 int				ag_putnstrs(const char *str, unsigned int n);
+int				ag_putnstr_fd(const char *str, unsigned int n, int fd);
+int				ag_putnstrl_fd(const char *str, unsigned int n, int fd);
+int				ag_putnstrs_fd(const char *str, unsigned int n, int fd);
 
 int				ag_putchoice(const char **dstr);
 
