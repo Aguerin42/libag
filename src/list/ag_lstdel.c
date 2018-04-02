@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_lstdel.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 15:06:55 by aguerin           #+#    #+#             */
+/*   Updated: 2018/03/31 15:07:04 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_lstdel.c
 **	\author	Alexis Guérin
 **	\date	30 janvier 2019
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Suppression d'une liste
 **
 **	La fonction supprime la liste `alst` et libère la mémoire en faisant appel à

@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_lstnew.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 15:08:03 by aguerin           #+#    #+#             */
+/*   Updated: 2018/03/31 15:08:20 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_lstnew.c
 **	\author	Alexis Guérin
 **	\date	29 janvier 2018
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Création d'un maillon
 **
 **	La fonction alloue la taille nécessaire pour un maillon de la liste

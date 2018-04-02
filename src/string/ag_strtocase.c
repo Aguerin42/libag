@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_strtocase.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/04/02 10:29:32 by aguerin           #+#    #+#             */
+/*   Updated: 2018/04/02 10:29:48 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_strtocase.c
 **	\author	Alexis Guérin
 **	\date	5 février 2018
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Passage d'une chaîne de caractères en minuscule
 **
 **	Transforme les caractères majuscules d'une chaîne de caractères
@@ -32,7 +44,7 @@ char	*ag_strtolower(char *str)
 	return (str);
 }
 
-/**
+/*
 **	\brief	Passage d'une chaîne de caractères en majucule
 **
 **	Transforme les caractères minuscules d'une chaîne de caractères

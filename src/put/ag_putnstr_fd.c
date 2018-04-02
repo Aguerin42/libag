@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_putnstr_fd.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/04/02 10:27:14 by aguerin           #+#    #+#             */
+/*   Updated: 2018/04/02 10:31:29 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_putnstr_fd.c
 **	\author	Alexis Guérin
 **	\date	21 mars 2018
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Écriture de `n` caractères d'une chaîne sur un `fd`
 **
 **	ft_putnstr_fd() écrit les `n` premiers caractères de la chaîne `str`.
@@ -37,7 +49,7 @@ int	ag_putnstr_fd(const char *str, unsigned int n, int fd)
 	return (write(fd, str, n));
 }
 
-/**
+/*
 **	\brief	Écriture de `n` caractères d'une chaîne suivi
 **			d'un retour à la ligne sur un `fd`
 **
@@ -59,8 +71,9 @@ int	ag_putnstrl_fd(const char *str, unsigned int n, int fd)
 	return (ag_putnstr_fd(str, n, fd) + ft_putchar_fd('\n', fd));
 }
 
-/**
-**	\brief	Écriture de `n` caractères d'une chaîne suivi d'un espace sur un `fd`
+/*
+**	\brief	Écriture des `n` caractères d'une chaîne suivi
+**			d'un espace sur un `fd`
 **
 **	ft_putnstr_fd() affiche les `n` premiers caractères de la chaîne `str` suivi
 **	d'un espace.

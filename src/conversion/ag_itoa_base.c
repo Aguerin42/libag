@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_itoa_base.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 15:04:24 by aguerin           #+#    #+#             */
+/*   Updated: 2018/03/31 15:04:57 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_itoa_base.c
 **	\author	Alexis Guérin
 **	\date	5 février 2018
@@ -28,7 +40,7 @@ static int	ag_size_itoa(unsigned long nb, int base)
 	return (i);
 }
 
-/**
+/*
 **	\brief	Conversion d'un entier en une chaîne de caractères
 **
 **	Conversion d'un nombre représenté en base 10, vers une chaîne de

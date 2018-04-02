@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_lstadd.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 15:06:01 by aguerin           #+#    #+#             */
+/*   Updated: 2018/03/31 15:06:15 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_lstadd.c
 **	\author	Alexis Guérin
 **	\date	29 janvier 2018
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Insertion d'un maillon en tête
 **
 **	Insert un maillon en debut de liste.
@@ -30,7 +42,7 @@ void	ag_lstadd(t_lstag **alst, t_lstag *new)
 	}
 }
 
-/**
+/*
 **	\brief	Insertion d'un maillon en queue
 **
 **	Insert un maillon en fin de liste.

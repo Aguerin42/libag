@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_putstrcase.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/04/02 10:27:37 by aguerin           #+#    #+#             */
+/*   Updated: 2018/04/02 10:27:50 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_putstrcase.c
 **	\author	Alexis Guérin
 **	\date	5 février 2018
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Affichage d'une chaîne en minuscule
 **
 **	\param	str	- chaîne de caractères
@@ -30,7 +42,7 @@ int	ag_putstrlower(const char *str)
 	return (cmp);
 }
 
-/**
+/*
 **	\brief	Affichage d'une chaîne en majuscule
 **
 **	\param	str	- chaîne de caractères

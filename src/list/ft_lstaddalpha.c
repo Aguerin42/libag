@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstaddalpha.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 15:08:41 by aguerin           #+#    #+#             */
+/*   Updated: 2018/03/31 15:09:07 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ft_lstaddalpha.c
 **	\author	Alexis Guérin
 **	\date	9 février 2018
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Ajout trié dans une liste
 **
 **	ft_lstaddalpha() ajoute un élément `new` dans la liste `alst` en respectant

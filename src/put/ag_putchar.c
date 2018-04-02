@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_putchar.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/04/02 10:25:11 by aguerin           #+#    #+#             */
+/*   Updated: 2018/04/02 10:25:32 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_putchar.c
 **	\author	Alexis Guérin
 **	\date	2 février 2018
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Affichage d'un caractère suivi d'un retour à la ligne
 **
 **	Écrit le caractère `c` suivi d'un retour à la ligne sur la sortie standard.
@@ -23,7 +35,7 @@ int	ag_putcharl(char c)
 	return (ft_putchar(c) + ft_putchar('\n'));
 }
 
-/**
+/*
 **	\brief	Affichage d'un caractère suivi d'un espace
 **
 **	Écrit le caractère `c` suivi d'un espace sur la sortie standard.
@@ -38,7 +50,7 @@ int	ag_putchars(char c)
 	return (ft_putchar(c) + ft_putchar(' '));
 }
 
-/**
+/*
 **	\brief	Affichage d'un caractère _x_ fois.
 **
 **	\param	c	- caractère à afficher

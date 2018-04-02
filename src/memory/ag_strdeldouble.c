@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_strdeldouble.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 15:14:07 by aguerin           #+#    #+#             */
+/*   Updated: 2018/03/31 15:14:18 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_strdeldouble.c
 **	\author	Alexis Guérin
 **	\date	5 février 2018
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Suppression d'un tableau de chaîne de caractères
 **
 **	Libère la mémoire la mémoire allouée pour le double pointeur sur `char`.

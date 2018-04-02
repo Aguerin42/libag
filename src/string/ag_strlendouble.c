@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_strlendouble.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/04/02 10:29:06 by aguerin           #+#    #+#             */
+/*   Updated: 2018/04/02 10:29:15 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_strlendouble.c
 **	\author	Alexis Guérin
 **	\date	5 février 2018
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Longueur de la première dimension d'un tableau de caractères
 **
 **	Calcule la longueur de la première dimension d'un tableau de caractères.

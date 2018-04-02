@@ -1,8 +1,21 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libag.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 15:02:13 by aguerin           #+#    #+#             */
+/*   Updated: 2018/03/31 15:03:33 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	libag.h
 **	\author	Alexis Guérin
 **	\date	22 janvier 2018
 */
+
 #ifndef LIBAG_H
 # define LIBAG_H
 
@@ -32,7 +45,7 @@ int				ag_isuppercase(char c);
 **	list
 */
 
-/**
+/*
 ** \brief	Structure pour les listes
 **
 ** \param	content			- Variable pour le stockage d'une valeur
@@ -43,10 +56,10 @@ int				ag_isuppercase(char c);
 
 typedef struct	s_lstag
 {
-	void			*content;	/*!< Variable pour le stockage d'une variable */
-	size_t			content_size;	/*!< Taille de la variable */
-	struct s_lstag	*prev;		/*!< Pointeur sur le maillon précédent */
-	struct s_lstag	*next;		/*!< Pointeur sur le maillon suivant */
+	void			*content;
+	size_t			content_size;
+	struct s_lstag	*prev;
+	struct s_lstag	*next;
 }				t_lstag;
 
 void			ag_lstadd(t_lstag **alst, t_lstag *new);

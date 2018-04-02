@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_putchoice.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/04/02 10:25:58 by aguerin           #+#    #+#             */
+/*   Updated: 2018/04/02 10:26:11 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_putchoice.c
 **	\author	Alexis Guérin
 **	\date	22 février 2018
@@ -49,7 +61,7 @@ static int	big(const char **dstr)
 	return (len);
 }
 
-/**
+/*
 **	\brief	Affichage d'une liste de choix en colonne
 **
 **	Affiche une liste de choix alignés en colonne

@@ -1,10 +1,23 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_atoi_base.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 15:03:51 by aguerin           #+#    #+#             */
+/*   Updated: 2018/03/31 15:04:16 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_atoi_base.c
 **	\author	Alexis Guérin
 **	\date	5 février 2018
 **
 **	\brief	Conversion d'une chaîne en entier
 */
+
 #include "libag.h"
 
 static int	error_verification(const char *str, int base)
@@ -34,7 +47,7 @@ static int	conv_dec(const char c)
 	return (-1);
 }
 
-/**
+/*
 **	\brief
 **
 **	Comme la fonction ft_atoi, ag_atoi_base renvoie un entier converti (en base

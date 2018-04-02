@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstcount.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 15:09:12 by aguerin           #+#    #+#             */
+/*   Updated: 2018/03/31 15:09:27 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ft_lstcount.c
 **	\author	Alexis Guérin
 **	\date	5 février 2018
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Test sur les éléments d'une liste
 **
 **	Renvoie 1 si au moins un élément de la liste passé à la fonction
@@ -33,7 +45,7 @@ int	ft_lstany(t_list *list, int f(void *))
 	return (0);
 }
 
-/**
+/*
 **	\brief	Compte le nombre de maillon
 **
 **	La fonction renvoie le nombre de maillon présent dans la liste.
@@ -56,7 +68,7 @@ int	ft_lstcount(t_list *list)
 	return (i);
 }
 
-/**
+/*
 **	\brief	Renvoie le total des retours de la fonction _f_
 **
 **	La fonction appelle la fonction _f_ (en lui donnant en paramètre le champ
@@ -84,7 +96,7 @@ int	ft_lstcount_all(t_list *lst, int f(void*))
 	return (tot);
 }
 
-/**
+/*
 **	\brief	Renvoie le nombre de maillon _vrai_
 **
 **	La fonction appelle la fonction _f_ (en lui donnant en paramètre le champ

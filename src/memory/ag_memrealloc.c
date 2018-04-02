@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_memrealloc.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 15:13:51 by aguerin           #+#    #+#             */
+/*   Updated: 2018/03/31 15:14:44 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_memrealloc.c
 **	\author	Alexis Guérin
 **	\date	12 décembre 2018
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Changement d'une taille d'allocation
 **
 **	La fonction alloue une nouvelle zone de mémoire de taille _newsize_ et copie
@@ -26,7 +38,7 @@
 **
 **	\return	pointeur sur la **nouvelle zone mémoire** allouée
 **			où l'ancienne a été copiée, ou **NULL** en cas d'erreur
-**/
+*/
 
 void	*ag_memrealloc(void *old, size_t oldsize, size_t newsize)
 {

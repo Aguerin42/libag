@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_putnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/04/02 10:26:51 by aguerin           #+#    #+#             */
+/*   Updated: 2018/04/02 10:27:07 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_putnstr.c
 **	\author	Alexis Guérin
 **	\date	2 février 2018
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Affichage de `n` caractères d'une chaîne
 **
 **	ft_putnstr() affiche les `n` premiers caractères de la chaîne `str`.
@@ -36,7 +48,7 @@ int	ag_putnstr(const char *str, unsigned int n)
 	return (write(1, str, n));
 }
 
-/**
+/*
 **	\brief	Affichage de `n` caractères d'une chaîne suivi
 **			d'un retour à la ligne
 **
@@ -57,7 +69,7 @@ int	ag_putnstrl(const char *str, unsigned int n)
 	return (ag_putnstr(str, n) + ft_putchar('\n'));
 }
 
-/**
+/*
 **	\brief	Affichage de `n` caractères d'une chaîne suivi d'un espace
 **
 **	ft_putnstr() affiche les `n` premiers caractères de la chaîne `str` suivi

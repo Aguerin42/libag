@@ -6,7 +6,7 @@
 /*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/16 10:15:53 by aguerin           #+#    #+#             */
-/*   Updated: 2018/02/05 15:22:30 by aguerin          ###   ########.fr       */
+/*   Updated: 2018/03/31 15:16:41 by aguerin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ static int		get_next_line_list(int fd, char **line, int rt, t_list *new)
 	return (rt);
 }
 
-/**
+/*
 ** \brief	Lit une ligne sur le descripteur de fichier donné.
 **
 ** La ligne lue est stockée dans le pointeur sur char 'line'. Sa mémoire

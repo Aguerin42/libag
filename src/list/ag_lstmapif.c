@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_lstmapif.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 15:07:49 by aguerin           #+#    #+#             */
+/*   Updated: 2018/03/31 15:07:57 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\brief	ag_lstmapif.c
 **	\author	Alexis Guérin
 **	\date	1 février 2018
@@ -6,7 +18,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Création d'une liste à partir d'une sélection
 **
 **	La fonction applique `f` sur chaque maillon de la list `lst`. Une nouvelle

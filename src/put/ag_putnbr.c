@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_putnbr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/04/02 10:26:15 by aguerin           #+#    #+#             */
+/*   Updated: 2018/04/02 10:26:32 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_putnbr.c
 **	\author	Alexis Guérin
 **	\date	2 février 2018
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Affichage d'un nombre suivi d'un retour à la ligne
 **
 **	Écrit le nombre `n` suivi d'un retour à la ligne sur la sortie standard.
@@ -23,7 +35,7 @@ int	ag_putnbrl(int n)
 	return (ft_putnbr(n) + ft_putchar('\n'));
 }
 
-/**
+/*
 **	\brief	Affichage d'un nombre suivi d'un espace
 **
 **	Écrit le nombre `n` suivi d'un espace sur la sortie standard.

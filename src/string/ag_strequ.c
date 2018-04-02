@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_strequ.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/04/02 10:28:35 by aguerin           #+#    #+#             */
+/*   Updated: 2018/04/02 10:30:38 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_strequ.c
 **	\author	Alexis Guérin
 **	\date	6 février 2018
@@ -8,7 +20,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Comparaison de chaînes de caractères insensible à la casse
 **
 **	Comme la fonction `ft_strequ()` de la [libft][], ag_strequ() compare les
@@ -45,7 +57,7 @@ int		ag_strequ(char const *s1, char const *s2)
 	return (1);
 }
 
-/**
+/*
 **	\brief	Comparaison de chaînes sur `n` caractères insensible à la casse
 **
 **	Comme la fonction `ft_strnequ()` de la [libft][], ag_strnequ() compare les
@@ -54,7 +66,7 @@ int		ag_strequ(char const *s1, char const *s2)
 **
 **	\param	s1	- première chaîne
 **	\param	s2	- deuxième chaîne
-**	\param	n	- nombre de caractères à comparer 
+**	\param	n	- nombre de caractères à comparer
 **
 **	\return	**1** si les chaînes sont identiques ou **0** sinon
 */

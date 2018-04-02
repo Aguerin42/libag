@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_iscase.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/03/31 15:05:10 by aguerin           #+#    #+#             */
+/*   Updated: 2018/03/31 15:05:26 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_iscase.c
 **	\author	Alexis Guérin
 **	\date	5 février 2018
@@ -6,7 +18,7 @@
 **	\brief	Vérification de la casse d'un caractère
 */
 
-/**
+/*
 **	\brief	Vérifie si un caractère est majuscule
 **
 **	\param	c	- caractère
@@ -21,7 +33,7 @@ int	ag_isuppercase(char c)
 	return (0);
 }
 
-/**
+/*
 **	\brief	Vérifie si un caractère est minuscule
 **
 **	\param	c	- caractère

@@ -1,4 +1,16 @@
-/**
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ag_strnrchr.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aguerin <aguerin@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/04/02 10:29:18 by aguerin           #+#    #+#             */
+/*   Updated: 2018/04/02 10:29:27 by aguerin          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
 **	\file	ag_strnrchr.c
 **	\author	Alexis Guérin
 **	\date	16 février 2018
@@ -6,7 +18,7 @@
 
 #include "libag.h"
 
-/**
+/*
 **	\brief	Recherche d'un caractère dans une chaîne
 **
 **	ag_strnrchr() renvoie le pointeur de la dernière occurence du caractère `c`
