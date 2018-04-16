@@ -37,6 +37,7 @@ char			*ag_itoa_base(unsigned long nb, int base);
 **	is
 */
 
+int				ag_isnumber(const char *str);
 int				ag_isspace(int c);
 int				ag_islowercase(char c);
 int				ag_isuppercase(char c);

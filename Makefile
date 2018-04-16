@@ -13,7 +13,7 @@ INC = $(addprefix includes/, $(INC_FILE))
 
 # Sources
 SRC_CNV = ag_atoi_base.c ag_itoa_base.c
-SRC_IS	= ag_isspace.c ag_iscase.c
+SRC_IS	= ag_isnumber.c ag_isspace.c ag_iscase.c
 SRC_LST = ag_lstadd.c ag_lstcountelem.c ag_lstdel.c ag_lstdelone.c ag_lstiter.c ag_lstmapif.c ag_lstnew.c ag_lsthead.c ag_lsttail.c ft_lstaddalpha.c ft_lstcount.c
 SRC_MTH = ag_factorial.c ag_sqrt.c ag_pow.c
 SRC_MEM = ag_memrealloc.c ag_strdeldouble.c
